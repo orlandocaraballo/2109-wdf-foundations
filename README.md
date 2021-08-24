@@ -8,3 +8,7 @@ Examples & Videos for 2109 WDF Foundations
 
 - [📓 08-18-2021](https://youtu.be/5MIZTQckGbY)
 - [📓 08-20-2021](https://youtu.be/VdX2uvsqcsA)
+
+## Week 2 Review Videos
+
+- [📓 08-24-2021](https://youtu.be/ahPntoSt36o)
