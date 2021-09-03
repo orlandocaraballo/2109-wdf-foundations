@@ -18,7 +18,7 @@ function vowelsCount(string) {
   const reducerCallback = (outputObject, currentCharacter) => {
     if ("aeiou".includes(currentCharacter)) {
       outputObject[currentCharacter]++;
-      outputObject.total++;
+      outputObject.total++;g
     }
 
     return outputObject;
