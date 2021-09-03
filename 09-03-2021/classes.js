@@ -8,6 +8,10 @@ class Cube extends Shape {
   constructor(height, width, depth) {
     super({ height: height, width: width, depth: depth });
   }
+
+  displayHeightWidth() {
+    return `height => ${this.dimensions.height} : width => ${this.dimensions.width}`;
+  }
 }
 
 class Rectangle extends Shape {
