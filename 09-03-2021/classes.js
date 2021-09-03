@@ -14,6 +14,7 @@ class Cube extends Shape {
   }
 }
 
+// this class is the same as the function constructor style below
 class Rectangle extends Shape {
   constructor(height, width) {
     super({ width: width, height: height });
