@@ -19,8 +19,11 @@ function aQuarter(callback) {
   };
 }
 
-const functionReturned = aQuarter((a, b) => a + b);
+const sumCallback = (a, b) => a + b;
+const functionReturned = aQuarter(sumCallback);
 
+// the arguments passed into functionReturned is eventually passed into
+//  the sumCallback in the closure
 console.log(functionReturned(13, 2));
 console.log(functionReturned(13, 2));
 console.log(functionReturned(13, 2));
