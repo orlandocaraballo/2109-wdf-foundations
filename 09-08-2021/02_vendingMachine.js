@@ -20,6 +20,12 @@ class VM {
       0
     );
 
+    // the code above is equivalent to the for in loop code below
+    // let total = 0;
+    // for(let id in this.inventory) {
+    //   total += this.inventory[id].stock;
+    // }
+
     if (total > 0) {
       // if total is greater than 0 then return total
       return `${total} item(s)`;
