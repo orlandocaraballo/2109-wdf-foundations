@@ -5,7 +5,7 @@ function aQuarter(callback) {
   //  function gets called in a closure, and also passes in the arguments
   //  from the returned function into the original callback function
   //  TIP: follow the logic with the debugger
-  return function (...args) {
+  return (...args) => {
     count++;
 
     // if count if multiple of 4
@@ -13,7 +13,7 @@ function aQuarter(callback) {
       // run the function and pass in its arguments
       return callback(...args);
     } else {
-      // return this string
+      // return the following string
       return "something went wrong :/";
     }
   };
