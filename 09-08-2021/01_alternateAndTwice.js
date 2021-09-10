@@ -5,7 +5,7 @@ function alternate(callback) {
   //  that keeps track of how many times count has run
   return () => {
     // we only run the function if we run it a multiple of 2 times
-    if (count % 2 === 0) {
+    if (count % 2 === 1) {
       callback();
     }
 
@@ -31,9 +31,10 @@ function twice(callback) {
   };
 }
 
-const runEveryOtherTime = alternate(() =>
-  console.log("this will run every other time I invoke it")
-);
+// original callback
+const loggin = () => console.log("this will run every other time I invoke it");
+
+const runEveryOtherTime = alternate(loggin);
 
 // notice how this function will only run every time
 runEveryOtherTime(); // 0
@@ -47,7 +48,7 @@ runEveryOtherTime(); // "this will run every other time I invoke it"
 
 // ------------------------------------------------------------------------
 
-const runTwice = alternate(() => console.log("this will only run two times"));
+const runTwice = twice(() => console.log("this will only run two times"));
 
 runTwice(); // "this will only run two times"
 runTwice(); // "this will only run two times"
